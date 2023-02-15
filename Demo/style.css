@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    /*background-color: hsla(185, 24%, 80%, 0.75);*/
+    margin: 0;
+    padding: 0;
+}
+/*::selection{
+    color: #fff;
+    background: #6665ee;
+}*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #23242a;
+}
+/*.container{
+    position: absolute;
+
+   
+    min-width: fit-content;
+    border-radius: 35px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(0deg, #626568, #19191b);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0);S
+}*/
+.form{
+    background-color: #1c1c1c;
+    height: 45vh;
+    width: 200vh;
+    padding: 30px 35px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.form::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    height: 100vh;
+    width: 200vh;
+    transform-origin: bottom left;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+}
+.form::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    height: 100vh;
+    width: 200vh;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+form 
+{
+	position: absolute;
+	inset: 2px;
+	background: #28292d;
+	padding: 30px 35px;
+	border-radius: 25px;
+	z-index: 10 ;
+	display: flex;
+	flex-direction: column;
+}
+
+.text-center {
+    color: #45f3ff;
+}
+ .form form .form-control{
+    height: 40px;
+    font-size: 15px;
+}
+ .form form .forget-pass{
+    margin: -15px 0 15px 0;
+}
+.form form .forget-pass a{
+   font-size: 15px;
+}
+ .form form .button{
+    background: #45f3ff;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+ .form form .button:hover{
+    background: #9b9bc0;
+}
+ .form form .link{
+    padding: 5px 0;
+}
+ .form form .link a{
+    color: #6665ee;
+}
+ .login-form form p{
+    font-size: 14px;
+}
+ .row .alert{
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+}
+
+.form-control    {
+    border: none;
+    color: #000;
+}
